@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/hometoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/backSupportHow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:background="@color/fui_transparent"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:gravity="center_vertical"
+                    android:text="How To Use?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pic_supportHow"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/tutorial" />
+
+            <TextView
+                android:id="@+id/body_supportHow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_supportHow"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="123"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/SupportCard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/body_supportHow"
+                android:layout_marginTop="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/supportHowB"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_filter_1"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="Brief Explain"
+                        android:paddingLeft="30dp" />
+
+                    <View
+                        android:id="@+id/dividerHow"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/supportHowB"
+                        android:background="#E8E8E8" />
+
+                    <Button
+                        android:id="@+id/supportHowR"
+                        android:layout_below="@id/dividerHow"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_filter_2"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="How To Make A Reservation?"
+                        android:paddingLeft="30dp" />
+
+                    <View
+                        android:id="@+id/dividerHow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/supportHowR"
+                        android:background="#E8E8E8" />
+
+                    <Button
+                        android:id="@+id/supportHowC"
+                        android:layout_below="@id/dividerHow2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_filter_3"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="How To Check Out?"
+                        android:paddingLeft="30dp" />
+
+                    <View
+                        android:id="@+id/dividerHow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/supportHowC"
+                        android:background="#E8E8E8" />
+
+                    <Button
+                        android:id="@+id/supportHowT"
+                        android:layout_below="@id/dividerHow3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_filter_4"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="How To Top Up?"
+                        android:paddingLeft="30dp" />
+
+                    <View
+                        android:id="@+id/dividerHow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/supportHowT"
+                        android:background="#E8E8E8" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

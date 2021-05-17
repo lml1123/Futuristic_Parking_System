@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/title_home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/record"
+        android:title="@string/title_record"
+        android:icon="@drawable/ic_history"/>
+    <item
+        android:id="@+id/wallet"
+        android:title="@string/title_wallet"
+        android:icon="@drawable/ic_attach_money"/>
+    <item
+        android:id="@+id/profile"
+        android:title="@string/title_profile"
+        android:icon="@drawable/ic_person_outline"/>
+</menu>

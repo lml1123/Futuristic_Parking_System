@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.futuristic">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/futuristic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/futuristic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VerifyPhoneNo" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".WalletPage"/>
+        <activity android:name=".TransactionDetails"/>
+        <activity android:name=".TransactionAll"/>
+        <activity android:name=".RecordPage" />
+        <activity android:name=".RecordDetails"/>
+        <activity android:name=".RecordPastPage"/>
+        <activity android:name=".RecordCancelPage"/>
+        <activity android:name=".ProfilePage"/>
+        <activity android:name=".VehiclePage" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ProfileDetails" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".NewsPage"/>
+        <activity android:name=".AboutPage"/>
+        <activity android:name=".TermsConditions"/>
+        <activity android:name=".SupportPage"/>
+        <activity android:name=".SupportEmail" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".SupportHow"/>
+        <activity android:name=".TutorialFirst" />
+        <activity android:name=".TutorialB" />
+        <activity android:name=".TutorialR" />
+        <activity android:name=".TutorialCO" />
+        <activity android:name=".TutorialTU" />
+        <activity android:name=".FirstPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ParkingOUtama" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignInPhone" />
+        <activity android:name=".SignUp" />
+
+    </application>
+
+</manifest>

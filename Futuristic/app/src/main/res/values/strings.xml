@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Futuristic</string>
+    <string name="title_home">Home</string>
+    <string name="title_record">Record</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_wallet">Wallet</string>
+
+    <string name="title_app">Futuristic Parking System</string>
+    <string name="record_title">Booking History</string>
+    <string name="profile_title">Profile Settings</string>
+    <string name="wallet_title">Wallet</string>
+
+    <string name="login_title">Login</string>
+    <string name="signup_title">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="textHome">ahaha</string>
+    <string name="textRecord">Haha</string>
+    <string name="textProfile">hihi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
